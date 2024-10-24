@@ -1079,61 +1079,6 @@ display(df_reduced)
   }
 </style>
 <div id="altair-viz-4ef2f75e45d2469098f86088e7194ea8"></div>
-<script type="text/javascript">
-  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
-  (function(spec, embedOpt){
-    let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-4ef2f75e45d2469098f86088e7194ea8") {
-      outputDiv = document.getElementById("altair-viz-4ef2f75e45d2469098f86088e7194ea8");
-    }
-    const paths = {
-      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
-      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
-      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.17.0?noext",
-      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
-    };
-
-    function maybeLoadScript(lib, version) {
-      var key = `${lib.replace("-", "")}_version`;
-      return (VEGA_DEBUG[key] == version) ?
-        Promise.resolve(paths[lib]) :
-        new Promise(function(resolve, reject) {
-          var s = document.createElement('script');
-          document.getElementsByTagName("head")[0].appendChild(s);
-          s.async = true;
-          s.onload = () => {
-            VEGA_DEBUG[key] = version;
-            return resolve(paths[lib]);
-          };
-          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
-          s.src = paths[lib];
-        });
-    }
-
-    function showError(err) {
-      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
-      throw err;
-    }
-
-    function displayChart(vegaEmbed) {
-      vegaEmbed(outputDiv, spec, embedOpt)
-        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
-    }
-
-    if(typeof define === "function" && define.amd) {
-      requirejs.config({paths});
-      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
-    } else {
-      maybeLoadScript("vega", "5")
-        .then(() => maybeLoadScript("vega-lite", "5.17.0"))
-        .then(() => maybeLoadScript("vega-embed", "6"))
-        .catch(showError)
-        .then(() => displayChart(vegaEmbed));
-    }
-  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-5e2d52a89ef4b8a24a14f976dca3c3b5"}, "mark": {"type": "rect"}, "encoding": {"color": {"field": "value", "type": "quantitative"}, "x": {"field": "x", "type": "ordinal"}, "y": {"field": "y", "type": "ordinal"}}, "height": 400, "width": 400, "$schema": "https://vega.github.io/schema/vega-lite/v5.17.0.json", "datasets": {"data-5e2d52a89ef4b8a24a14f976dca3c3b5": [{"x": "Clump_thickness", "y": "Clump_thickness", "value": 1.0}, {"x": "Uniformity_of_cell_shape", "y": "Clump_thickness", "value": 0.664120647754771}, {"x": "Marginal_adhesion", "y": "Clump_thickness", "value": 0.5415925824931721}, {"x": "Single_epithelial_cell_size", "y": "Clump_thickness", "value": 0.5832522310596004}, {"x": "Bare_nuclei", "y": "Clump_thickness", "value": 0.5892242034074747}, {"x": "Bland_chromatin", "y": "Clump_thickness", "value": 0.5380927257963486}, {"x": "Normal_nucleoli", "y": "Clump_thickness", "value": 0.5703983577123227}, {"x": "Class", "y": "Clump_thickness", "value": 0.6824518693782367}, {"x": "Clump_thickness", "y": "Uniformity_of_cell_shape", "value": 0.664120647754771}, {"x": "Uniformity_of_cell_shape", "y": "Uniformity_of_cell_shape", "value": 1.0}, {"x": "Marginal_adhesion", "y": "Uniformity_of_cell_shape", "value": 0.7117301413183634}, {"x": "Single_epithelial_cell_size", "y": "Uniformity_of_cell_shape", "value": 0.7592436799685284}, {"x": "Bare_nuclei", "y": "Uniformity_of_cell_shape", "value": 0.7496458613256742}, {"x": "Bland_chromatin", "y": "Uniformity_of_cell_shape", "value": 0.6923158264128999}, {"x": "Normal_nucleoli", "y": "Uniformity_of_cell_shape", "value": 0.7252678131849605}, {"x": "Class", "y": "Uniformity_of_cell_shape", "value": 0.8363941254587757}, {"x": "Clump_thickness", "y": "Marginal_adhesion", "value": 0.5415925824931721}, {"x": "Uniformity_of_cell_shape", "y": "Marginal_adhesion", "value": 0.7117301413183634}, {"x": "Marginal_adhesion", "y": "Marginal_adhesion", "value": 1.0}, {"x": "Single_epithelial_cell_size", "y": "Marginal_adhesion", "value": 0.6676297643654048}, {"x": "Bare_nuclei", "y": "Marginal_adhesion", "value": 0.6912391290900325}, {"x": "Bland_chromatin", "y": "Marginal_adhesion", "value": 0.6245153217435166}, {"x": "Normal_nucleoli", "y": "Marginal_adhesion", "value": 0.6343095093854856}, {"x": "Class", "y": "Marginal_adhesion", "value": 0.7279952033877697}, {"x": "Clump_thickness", "y": "Single_epithelial_cell_size", "value": 0.5832522310596004}, {"x": "Uniformity_of_cell_shape", "y": "Single_epithelial_cell_size", "value": 0.7592436799685284}, {"x": "Marginal_adhesion", "y": "Single_epithelial_cell_size", "value": 0.6676297643654048}, {"x": "Single_epithelial_cell_size", "y": "Single_epithelial_cell_size", "value": 1.0}, {"x": "Bare_nuclei", "y": "Single_epithelial_cell_size", "value": 0.6915127159824914}, {"x": "Bland_chromatin", "y": "Single_epithelial_cell_size", "value": 0.639788487354601}, {"x": "Normal_nucleoli", "y": "Single_epithelial_cell_size", "value": 0.7069306268528425}, {"x": "Class", "y": "Single_epithelial_cell_size", "value": 0.7625381013467724}, {"x": "Clump_thickness", "y": "Bare_nuclei", "value": 0.5892242034074747}, {"x": "Uniformity_of_cell_shape", "y": "Bare_nuclei", "value": 0.7496458613256742}, {"x": "Marginal_adhesion", "y": "Bare_nuclei", "value": 0.6912391290900325}, {"x": "Single_epithelial_cell_size", "y": "Bare_nuclei", "value": 0.6915127159824914}, {"x": "Bare_nuclei", "y": "Bare_nuclei", "value": 1.0}, {"x": "Bland_chromatin", "y": "Bare_nuclei", "value": 0.6778153765862659}, {"x": "Normal_nucleoli", "y": "Bare_nuclei", "value": 0.6617674002990571}, {"x": "Class", "y": "Bare_nuclei", "value": 0.8283768285432819}, {"x": "Clump_thickness", "y": "Bland_chromatin", "value": 0.5380927257963486}, {"x": "Uniformity_of_cell_shape", "y": "Bland_chromatin", "value": 0.6923158264128999}, {"x": "Marginal_adhesion", "y": "Bland_chromatin", "value": 0.6245153217435166}, {"x": "Single_epithelial_cell_size", "y": "Bland_chromatin", "value": 0.639788487354601}, {"x": "Bare_nuclei", "y": "Bland_chromatin", "value": 0.6778153765862659}, {"x": "Bland_chromatin", "y": "Bland_chromatin", "value": 1.0}, {"x": "Normal_nucleoli", "y": "Bland_chromatin", "value": 0.6623091785843874}, {"x": "Class", "y": "Bland_chromatin", "value": 0.7403503655397623}, {"x": "Clump_thickness", "y": "Normal_nucleoli", "value": 0.5703983577123227}, {"x": "Uniformity_of_cell_shape", "y": "Normal_nucleoli", "value": 0.7252678131849605}, {"x": "Marginal_adhesion", "y": "Normal_nucleoli", "value": 0.6343095093854856}, {"x": "Single_epithelial_cell_size", "y": "Normal_nucleoli", "value": 0.7069306268528425}, {"x": "Bare_nuclei", "y": "Normal_nucleoli", "value": 0.6617674002990571}, {"x": "Bland_chromatin", "y": "Normal_nucleoli", "value": 0.6623091785843874}, {"x": "Normal_nucleoli", "y": "Normal_nucleoli", "value": 1.0}, {"x": "Class", "y": "Normal_nucleoli", "value": 0.743822581492355}, {"x": "Clump_thickness", "y": "Class", "value": 0.6824518693782367}, {"x": "Uniformity_of_cell_shape", "y": "Class", "value": 0.8363941254587757}, {"x": "Marginal_adhesion", "y": "Class", "value": 0.7279952033877697}, {"x": "Single_epithelial_cell_size", "y": "Class", "value": 0.7625381013467724}, {"x": "Bare_nuclei", "y": "Class", "value": 0.8283768285432819}, {"x": "Bland_chromatin", "y": "Class", "value": 0.7403503655397623}, {"x": "Normal_nucleoli", "y": "Class", "value": 0.743822581492355}, {"x": "Class", "y": "Class", "value": 1.0}]}}, {"mode": "vega-lite"});
-</script>
-
-
 
 <div>
 <style scoped>
@@ -1657,61 +1602,6 @@ alt.Chart(melted_df).mark_bar().encode(
   }
 </style>
 <div id="altair-viz-612d68804e2b4911972abaf66ce36f8d"></div>
-<script type="text/javascript">
-  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
-  (function(spec, embedOpt){
-    let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-612d68804e2b4911972abaf66ce36f8d") {
-      outputDiv = document.getElementById("altair-viz-612d68804e2b4911972abaf66ce36f8d");
-    }
-    const paths = {
-      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
-      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
-      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.17.0?noext",
-      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
-    };
-
-    function maybeLoadScript(lib, version) {
-      var key = `${lib.replace("-", "")}_version`;
-      return (VEGA_DEBUG[key] == version) ?
-        Promise.resolve(paths[lib]) :
-        new Promise(function(resolve, reject) {
-          var s = document.createElement('script');
-          document.getElementsByTagName("head")[0].appendChild(s);
-          s.async = true;
-          s.onload = () => {
-            VEGA_DEBUG[key] = version;
-            return resolve(paths[lib]);
-          };
-          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
-          s.src = paths[lib];
-        });
-    }
-
-    function showError(err) {
-      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
-      throw err;
-    }
-
-    function displayChart(vegaEmbed) {
-      vegaEmbed(outputDiv, spec, embedOpt)
-        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
-    }
-
-    if(typeof define === "function" && define.amd) {
-      requirejs.config({paths});
-      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
-    } else {
-      maybeLoadScript("vega", "5")
-        .then(() => maybeLoadScript("vega-lite", "5.17.0"))
-        .then(() => maybeLoadScript("vega-embed", "6"))
-        .catch(showError)
-        .then(() => displayChart(vegaEmbed));
-    }
-  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-43de4afcf17b6f25425a1642249d81f0"}, "mark": {"type": "bar"}, "encoding": {"color": {"field": "Model", "type": "nominal"}, "column": {"field": "Metric", "type": "nominal"}, "x": {"field": "Model", "type": "nominal"}, "y": {"field": "Value", "type": "quantitative"}}, "$schema": "https://vega.github.io/schema/vega-lite/v5.17.0.json", "datasets": {"data-43de4afcf17b6f25425a1642249d81f0": [{"Model": "Random Forest Classifier", "Metric": "Accuracy", "Value": 0.9714285714285714}, {"Model": "k-NN Classifier", "Metric": "Accuracy", "Value": 0.9714285714285714}, {"Model": "Logistic Regression Classifier", "Metric": "Accuracy", "Value": 0.9642857142857143}, {"Model": "Random Forest Classifier", "Metric": "Precision", "Value": 0.9361702127659575}, {"Model": "k-NN Classifier", "Metric": "Precision", "Value": 0.9361702127659575}, {"Model": "Logistic Regression Classifier", "Metric": "Precision", "Value": 0.9545454545454546}, {"Model": "Random Forest Classifier", "Metric": "Recall", "Value": 0.9777777777777777}, {"Model": "k-NN Classifier", "Metric": "Recall", "Value": 0.9777777777777777}, {"Model": "Logistic Regression Classifier", "Metric": "Recall", "Value": 0.9333333333333333}, {"Model": "Random Forest Classifier", "Metric": "F1 Score", "Value": 0.9565217391304348}, {"Model": "k-NN Classifier", "Metric": "F1 Score", "Value": 0.9565217391304348}, {"Model": "Logistic Regression Classifier", "Metric": "F1 Score", "Value": 0.9438202247191011}, {"Model": "Random Forest Classifier", "Metric": "ROC AUC", "Value": 0.9730994152046784}, {"Model": "k-NN Classifier", "Metric": "ROC AUC", "Value": 0.9730994152046784}, {"Model": "Logistic Regression Classifier", "Metric": "ROC AUC", "Value": 0.956140350877193}]}}, {"mode": "vega-lite"});
-</script>
-
-
 
 ```python
 # Create a DataFrame for ROC curves
@@ -1763,59 +1653,6 @@ roc_chart.display()
   }
 </style>
 <div id="altair-viz-c69ab7c880f64c26980b9c485c35be98"></div>
-<script type="text/javascript">
-  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
-  (function(spec, embedOpt){
-    let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-c69ab7c880f64c26980b9c485c35be98") {
-      outputDiv = document.getElementById("altair-viz-c69ab7c880f64c26980b9c485c35be98");
-    }
-    const paths = {
-      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
-      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
-      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.17.0?noext",
-      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
-    };
-
-    function maybeLoadScript(lib, version) {
-      var key = `${lib.replace("-", "")}_version`;
-      return (VEGA_DEBUG[key] == version) ?
-        Promise.resolve(paths[lib]) :
-        new Promise(function(resolve, reject) {
-          var s = document.createElement('script');
-          document.getElementsByTagName("head")[0].appendChild(s);
-          s.async = true;
-          s.onload = () => {
-            VEGA_DEBUG[key] = version;
-            return resolve(paths[lib]);
-          };
-          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
-          s.src = paths[lib];
-        });
-    }
-
-    function showError(err) {
-      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
-      throw err;
-    }
-
-    function displayChart(vegaEmbed) {
-      vegaEmbed(outputDiv, spec, embedOpt)
-        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
-    }
-
-    if(typeof define === "function" && define.amd) {
-      requirejs.config({paths});
-      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
-    } else {
-      maybeLoadScript("vega", "5")
-        .then(() => maybeLoadScript("vega-lite", "5.17.0"))
-        .then(() => maybeLoadScript("vega-embed", "6"))
-        .catch(showError)
-        .then(() => displayChart(vegaEmbed));
-    }
-  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-12709f7d4f28eee0b5f32c8498e96895"}, "mark": {"type": "line"}, "encoding": {"color": {"field": "Model", "type": "nominal"}, "tooltip": [{"field": "Model", "type": "nominal"}, {"field": "False Positive Rate", "type": "quantitative"}, {"field": "True Positive Rate", "type": "quantitative"}], "x": {"field": "False Positive Rate", "type": "quantitative"}, "y": {"field": "True Positive Rate", "type": "quantitative"}}, "title": "ROC Curves for Three Models", "$schema": "https://vega.github.io/schema/vega-lite/v5.17.0.json", "datasets": {"data-12709f7d4f28eee0b5f32c8498e96895": [{"False Positive Rate": 0.0, "True Positive Rate": 0.0, "Model": "Random Forest (AUC = 0.97)"}, {"False Positive Rate": 0.0, "True Positive Rate": 0.37777777777777777, "Model": "Random Forest (AUC = 0.97)"}, {"False Positive Rate": 0.0, "True Positive Rate": 0.4444444444444444, "Model": "Random Forest (AUC = 0.97)"}, {"False Positive Rate": 0.0, "True Positive Rate": 0.4888888888888889, "Model": "Random Forest (AUC = 0.97)"}, {"False Positive Rate": 0.0, "True Positive Rate": 0.5555555555555556, "Model": "Random Forest (AUC = 0.97)"}, {"False Positive Rate": 0.010526315789473684, "True Positive Rate": 0.5777777777777777, "Model": "Random Forest (AUC = 0.97)"}, {"False Positive Rate": 0.010526315789473684, "True Positive Rate": 0.6222222222222222, "Model": "Random Forest (AUC = 0.97)"}, {"False Positive Rate": 0.010526315789473684, "True Positive Rate": 0.6888888888888889, "Model": "Random Forest (AUC = 0.97)"}, {"False Positive Rate": 0.010526315789473684, "True Positive Rate": 0.8222222222222222, "Model": "Random Forest (AUC = 0.97)"}, {"False Positive Rate": 0.021052631578947368, "True Positive Rate": 0.8444444444444444, "Model": "Random Forest (AUC = 0.97)"}, {"False Positive Rate": 0.021052631578947368, "True Positive Rate": 0.9111111111111111, "Model": "Random Forest (AUC = 0.97)"}, {"False Positive Rate": 0.031578947368421054, "True Positive Rate": 0.9111111111111111, "Model": "Random Forest (AUC = 0.97)"}, {"False Positive Rate": 0.031578947368421054, "True Positive Rate": 0.9777777777777777, "Model": "Random Forest (AUC = 0.97)"}, {"False Positive Rate": 0.06315789473684211, "True Positive Rate": 0.9777777777777777, "Model": "Random Forest (AUC = 0.97)"}, {"False Positive Rate": 0.06315789473684211, "True Positive Rate": 1.0, "Model": "Random Forest (AUC = 0.97)"}, {"False Positive Rate": 0.10526315789473684, "True Positive Rate": 1.0, "Model": "Random Forest (AUC = 0.97)"}, {"False Positive Rate": 1.0, "True Positive Rate": 1.0, "Model": "Random Forest (AUC = 0.97)"}, {"False Positive Rate": 0.0, "True Positive Rate": 0.0, "Model": "k-NN (AUC = 0.97)"}, {"False Positive Rate": 0.0, "True Positive Rate": 0.37777777777777777, "Model": "k-NN (AUC = 0.97)"}, {"False Positive Rate": 0.0, "True Positive Rate": 0.4444444444444444, "Model": "k-NN (AUC = 0.97)"}, {"False Positive Rate": 0.0, "True Positive Rate": 0.4888888888888889, "Model": "k-NN (AUC = 0.97)"}, {"False Positive Rate": 0.0, "True Positive Rate": 0.5555555555555556, "Model": "k-NN (AUC = 0.97)"}, {"False Positive Rate": 0.010526315789473684, "True Positive Rate": 0.5777777777777777, "Model": "k-NN (AUC = 0.97)"}, {"False Positive Rate": 0.010526315789473684, "True Positive Rate": 0.6222222222222222, "Model": "k-NN (AUC = 0.97)"}, {"False Positive Rate": 0.010526315789473684, "True Positive Rate": 0.6888888888888889, "Model": "k-NN (AUC = 0.97)"}, {"False Positive Rate": 0.010526315789473684, "True Positive Rate": 0.8222222222222222, "Model": "k-NN (AUC = 0.97)"}, {"False Positive Rate": 0.021052631578947368, "True Positive Rate": 0.8444444444444444, "Model": "k-NN (AUC = 0.97)"}, {"False Positive Rate": 0.021052631578947368, "True Positive Rate": 0.9111111111111111, "Model": "k-NN (AUC = 0.97)"}, {"False Positive Rate": 0.031578947368421054, "True Positive Rate": 0.9111111111111111, "Model": "k-NN (AUC = 0.97)"}, {"False Positive Rate": 0.031578947368421054, "True Positive Rate": 0.9777777777777777, "Model": "k-NN (AUC = 0.97)"}, {"False Positive Rate": 0.06315789473684211, "True Positive Rate": 0.9777777777777777, "Model": "k-NN (AUC = 0.97)"}, {"False Positive Rate": 0.06315789473684211, "True Positive Rate": 1.0, "Model": "k-NN (AUC = 0.97)"}, {"False Positive Rate": 0.10526315789473684, "True Positive Rate": 1.0, "Model": "k-NN (AUC = 0.97)"}, {"False Positive Rate": 1.0, "True Positive Rate": 1.0, "Model": "k-NN (AUC = 0.97)"}, {"False Positive Rate": 0.0, "True Positive Rate": 0.0, "Model": "Logistic Regression (AUC = 0.96)"}, {"False Positive Rate": 0.0, "True Positive Rate": 0.37777777777777777, "Model": "Logistic Regression (AUC = 0.96)"}, {"False Positive Rate": 0.0, "True Positive Rate": 0.4444444444444444, "Model": "Logistic Regression (AUC = 0.96)"}, {"False Positive Rate": 0.0, "True Positive Rate": 0.4888888888888889, "Model": "Logistic Regression (AUC = 0.96)"}, {"False Positive Rate": 0.0, "True Positive Rate": 0.5555555555555556, "Model": "Logistic Regression (AUC = 0.96)"}, {"False Positive Rate": 0.010526315789473684, "True Positive Rate": 0.5777777777777777, "Model": "Logistic Regression (AUC = 0.96)"}, {"False Positive Rate": 0.010526315789473684, "True Positive Rate": 0.6222222222222222, "Model": "Logistic Regression (AUC = 0.96)"}, {"False Positive Rate": 0.010526315789473684, "True Positive Rate": 0.6888888888888889, "Model": "Logistic Regression (AUC = 0.96)"}, {"False Positive Rate": 0.010526315789473684, "True Positive Rate": 0.8222222222222222, "Model": "Logistic Regression (AUC = 0.96)"}, {"False Positive Rate": 0.021052631578947368, "True Positive Rate": 0.8444444444444444, "Model": "Logistic Regression (AUC = 0.96)"}, {"False Positive Rate": 0.021052631578947368, "True Positive Rate": 0.9111111111111111, "Model": "Logistic Regression (AUC = 0.96)"}, {"False Positive Rate": 0.031578947368421054, "True Positive Rate": 0.9111111111111111, "Model": "Logistic Regression (AUC = 0.96)"}, {"False Positive Rate": 0.031578947368421054, "True Positive Rate": 0.9777777777777777, "Model": "Logistic Regression (AUC = 0.96)"}, {"False Positive Rate": 0.06315789473684211, "True Positive Rate": 0.9777777777777777, "Model": "Logistic Regression (AUC = 0.96)"}, {"False Positive Rate": 0.06315789473684211, "True Positive Rate": 1.0, "Model": "Logistic Regression (AUC = 0.96)"}, {"False Positive Rate": 0.10526315789473684, "True Positive Rate": 1.0, "Model": "Logistic Regression (AUC = 0.96)"}, {"False Positive Rate": 1.0, "True Positive Rate": 1.0, "Model": "Logistic Regression (AUC = 0.96)"}]}}, {"mode": "vega-lite"});
-</script>
 
 ![Comparison Barcharts](comparison-barcharts.png)
 
