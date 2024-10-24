@@ -32,19 +32,7 @@ display(df.head())
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -377,19 +365,6 @@ def show_boxplot(df: pd.DataFrame) -> alt.Chart:
 show_boxplot(df.drop(columns="Class")).show()
 ```
 
-
-
-<style>
-  #altair-viz-f161480a78a54499927c0854e1457879.vega-embed {
-    width: 100%;
-    display: flex;
-  }
-
-  #altair-viz-f161480a78a54499927c0854e1457879.vega-embed details,
-  #altair-viz-f161480a78a54499927c0854e1457879.vega-embed details summary {
-    position: relative;
-  }
-</style>
 <div id="altair-viz-f161480a78a54499927c0854e1457879"></div>
 
 ![Feature Magnitude Boxplot Before Standardization](feature-magnitude-boxplot-before-standardization.png)
@@ -444,19 +419,6 @@ visualize_outliers(df_scaled.drop(columns="Class"))
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -543,20 +505,6 @@ visualize_outliers(df_scaled.drop(columns="Class"))
 </table>
 </div>
 
-
-
-
-<style>
-  #altair-viz-05c9f5709a09407fba412ab9803be5c2.vega-embed {
-    width: 100%;
-    display: flex;
-  }
-
-  #altair-viz-05c9f5709a09407fba412ab9803be5c2.vega-embed details,
-  #altair-viz-05c9f5709a09407fba412ab9803be5c2.vega-embed details summary {
-    position: relative;
-  }
-</style>
 <div id="altair-viz-05c9f5709a09407fba412ab9803be5c2"></div>
 
 ![Feature Magnitude Box-lot After Standardization](feature-magnitude-boxplot-after-standardization.png)
@@ -618,19 +566,6 @@ combined_charts.show()
                               
 ```
 
-
-
-<style>
-  #altair-viz-74a401c49ba242e98a7f1f451156a351.vega-embed {
-    width: 100%;
-    display: flex;
-  }
-
-  #altair-viz-74a401c49ba242e98a7f1f451156a351.vega-embed details,
-  #altair-viz-74a401c49ba242e98a7f1f451156a351.vega-embed details summary {
-    position: relative;
-  }
-</style>
 <div id="altair-viz-74a401c49ba242e98a7f1f451156a351"></div>
 
 ![Outlier Scatter Chart before Winsorized](outlier-scatter-chart-before-winsorized.png)
@@ -658,19 +593,6 @@ visualize_outliers(df_winsorized.drop(columns="Class"))
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -757,20 +679,6 @@ visualize_outliers(df_winsorized.drop(columns="Class"))
 </table>
 </div>
 
-
-
-
-<style>
-  #altair-viz-dd2572f05d9c42df82f10dbb4687a35c.vega-embed {
-    width: 100%;
-    display: flex;
-  }
-
-  #altair-viz-dd2572f05d9c42df82f10dbb4687a35c.vega-embed details,
-  #altair-viz-dd2572f05d9c42df82f10dbb4687a35c.vega-embed details summary {
-    position: relative;
-  }
-</style>
 <div id="altair-viz-dd2572f05d9c42df82f10dbb4687a35c"></div>
 
 ![Feature Magnitude Boxplot after Winsorized](feature-magnitude-boxplot-after-winsorized.png)
@@ -860,19 +768,6 @@ def render_correlation_matrix(df: pd.DataFrame) -> alt.Chart:
 render_correlation_matrix(df_boxcoxed).show()
 ```
 
-
-
-<style>
-  #altair-viz-0caecfc6777e415fa5174daca433b7d2.vega-embed {
-    width: 100%;
-    display: flex;
-  }
-
-  #altair-viz-0caecfc6777e415fa5174daca433b7d2.vega-embed details,
-  #altair-viz-0caecfc6777e415fa5174daca433b7d2.vega-embed details summary {
-    position: relative;
-  }
-</style>
 <div id="altair-viz-0caecfc6777e415fa5174daca433b7d2"></div>
 
 ![Spearman Analysis before dropping feautures](spearman-before-drop-features.png)
@@ -907,19 +802,6 @@ display(vif_df)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -998,19 +880,6 @@ display(df_reduced)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1064,36 +933,9 @@ display(df_reduced)
 </table>
 </div>
 
-
-
-
-<style>
-  #altair-viz-4ef2f75e45d2469098f86088e7194ea8.vega-embed {
-    width: 100%;
-    display: flex;
-  }
-
-  #altair-viz-4ef2f75e45d2469098f86088e7194ea8.vega-embed details,
-  #altair-viz-4ef2f75e45d2469098f86088e7194ea8.vega-embed details summary {
-    position: relative;
-  }
-</style>
 <div id="altair-viz-4ef2f75e45d2469098f86088e7194ea8"></div>
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1289,19 +1131,6 @@ display(df_selected)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1528,19 +1357,6 @@ alt.Chart(melted_df).mark_bar().encode(
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1585,22 +1401,6 @@ alt.Chart(melted_df).mark_bar().encode(
 </table>
 </div>
 
-
-
-
-
-
-<style>
-  #altair-viz-612d68804e2b4911972abaf66ce36f8d.vega-embed {
-    width: 100%;
-    display: flex;
-  }
-
-  #altair-viz-612d68804e2b4911972abaf66ce36f8d.vega-embed details,
-  #altair-viz-612d68804e2b4911972abaf66ce36f8d.vega-embed details summary {
-    position: relative;
-  }
-</style>
 <div id="altair-viz-612d68804e2b4911972abaf66ce36f8d"></div>
 
 ```python
@@ -1639,19 +1439,6 @@ roc_chart = alt.Chart(roc_df).mark_line().encode(
 roc_chart.display()
 ```
 
-
-
-<style>
-  #altair-viz-c69ab7c880f64c26980b9c485c35be98.vega-embed {
-    width: 100%;
-    display: flex;
-  }
-
-  #altair-viz-c69ab7c880f64c26980b9c485c35be98.vega-embed details,
-  #altair-viz-c69ab7c880f64c26980b9c485c35be98.vega-embed details summary {
-    position: relative;
-  }
-</style>
 <div id="altair-viz-c69ab7c880f64c26980b9c485c35be98"></div>
 
 ![Comparison Barcharts](comparison-barcharts.png)
@@ -1681,19 +1468,6 @@ display(confusion_matrix_df)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
